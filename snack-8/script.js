@@ -21,6 +21,6 @@ const students = [
 
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
-const studentClass = students.find((student)=> student.name === 'Marco Lanci');
+const searchedStudent = students.find((student)=> student.name === 'Marco Lanci');
 console.log(students);
-studentClass !== undefined? console.log(studentClass.class): console.log("studente non trovato");
+searchedStudent? console.log(searchedStudent.class): console.log("studente non trovato");

@@ -25,9 +25,16 @@ const zucchine = [
 // console.log(shortZucchine);
 
 // * CONTROLLO IN CONTEMPORANEA
-const longZucchine = [];
-const shortZucchine = [];
-zucchine.forEach((zucchina)=>{zucchina.length > 15? longZucchine.push(zucchina): shortZucchine.push(zucchina)});
-console.log(zucchine);
+// const longZucchine = [];
+// const shortZucchine = [];
+// zucchine.forEach((zucchina)=>{zucchina.length > 15? longZucchine.push(zucchina): shortZucchine.push(zucchina)});
+// console.log(zucchine);
+// console.log(longZucchine);
+// console.log(shortZucchine);
+
+// * CON FILTER
+const cmLongZucchina = 15;
+const longZucchine = zucchine.filter((zucchina)=> zucchina.length >= cmLongZucchina);
+const shortZucchine = zucchine.filter((zucchina)=> zucchina.length < cmLongZucchina);
 console.log(longZucchine);
 console.log(shortZucchine);
